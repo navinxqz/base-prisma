@@ -1,4 +1,4 @@
-# LWS Prisma ORM Crash Course — Setup & Command Guide
+# Setup & Command Guide
 
 A Next.js 16 + Prisma 6 + PostgreSQL notes app. This README is a learning reference:
 every command you need to set up Docker/PostgreSQL, run the project, inspect the
