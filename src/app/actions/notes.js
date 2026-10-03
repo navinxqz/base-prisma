@@ -69,11 +69,10 @@ export async function getNotes(filters = {}) {
   const where = {};
 
   if (filters.search) {
-    where.OR = [
-      {
-        title: { contains: filters.search, mode: "insensitive" },
-        content: { contains: filters.search, mode: "insensitive" },
-      }
+    where.OR = [ 
+      //OR operator is used to filter notes based on title or content containing the search term, case-insensitively
+      { title: { contains: filters.search, mode: "insensitive" } },
+      { content: { contains: filters.search, mode: "insensitive" } },
     ]
   }
 
@@ -85,7 +84,7 @@ export async function getNotes(filters = {}) {
     const notes = await prisma.note.findMany({
       where,
       include: { tags: true },
-      orderBy: { createdAt: "desc" }
+      orderBy: { createdAt: "desc" } //data will come in descending order of creation date
     });
     return notes;
   } catch (err) {

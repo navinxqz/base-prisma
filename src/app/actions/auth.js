@@ -7,9 +7,9 @@ import { redirect } from 'next/navigation';
 const SESSION_COOKIE_NAME = 'lws_auth_token';
 
 const MOCK_USER = {
-  id: 'user-1',
-  name: 'Sumit Saha',
-  email: 'sumit@learnwithsumit.com',
+  // id: 'user-1',
+  // name: 'Sumit Saha',
+  // email: 'sumit@learnwithsumit.com',
 };
 
 export async function getCurrentUser() {

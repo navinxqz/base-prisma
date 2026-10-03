@@ -22,9 +22,8 @@ export function LoginForm() {
         label="Email Address"
         name="email"
         type="email"
-        placeholder="e.g. sumit@learnwithsumit.com"
+        placeholder="you@example.com"
         required
-        defaultValue="sumit@learnwithsumit.com"
       />
 
       <Input
@@ -33,7 +32,6 @@ export function LoginForm() {
         type="password"
         placeholder="••••••••"
         required
-        defaultValue="password123"
       />
 
       <Button type="submit" variant="yellow" className="w-full mt-2" loading={isPending}>

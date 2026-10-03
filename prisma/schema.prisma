@@ -9,7 +9,7 @@ datasource db {
 }
 
 model User {
-    id       String @id @default(cuid())
+    id       String @id @default(cuid()) // -> postgreSQL
     // id      String @id @default(auto()) @map("_id") @db.ObjectId -> mongoDB
     email    String @unique
     name     String
